@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hamilton Yaluzan | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <a class="logo" href="#inicio">Hamilton Yaluzan</a>
+  <nav aria-label="Principal">
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#info">Sobre mí</a></li>
+      <li><a href="#conocimientos">Conocimientos</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#redes">Redes</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<section id="inicio">
+  <div class="wrap hero">
+    <!-- Reemplazá "foto.jpg" por tu foto (misma carpeta que este archivo) -->
+    <img class="foto" src="foto.jpg" alt="Foto de Hamilton Yaluzan" width="200" height="200">
+    <h1>Hamilton Yaluzan</h1>
+    <p>Hola, mi nombre es Hamilton, estudiante de la tecnicatura de programación. Algunos de mis conocimientos se basan en C++, Java, JavaScript y SQL.</p>
+    <div>
+      <a class="btn" href="#proyectos">Ver proyectos</a>
+      <a class="btn alt" href="#contacto">Escribime</a>
+    </div>
+  </div>
+</section>
+
+<section id="info">
+  <div class="wrap info">
+    <div>
+      <h2>Información general</h2>
+      <p>Estudio la tecnicatura de programación en la Universidad Tecnológica Nacional, Facultad Regional General Pacheco.</p>
+      <p>Busco desarrollarme mejor en el mundo de la tecnología y adquirir mejores conocimientos.</p>
+    </div>
+    <dl>
+      <dt>Estudios</dt><dd>Tecnicatura en Programación</dd>
+      <dt>Universidad</dt><dd>UTN, Facultad Regional General Pacheco</dd>
+      <dt>Objetivo</dt><dd>Crecer en el mundo de la tecnología</dd>
+    </dl>
+  </div>
+</section>
+
+<section id="conocimientos">
+  <div class="wrap">
+    <h2>Conocimientos</h2>
+    <div class="skills">
+      <div>
+        <h3>Nivel medio</h3>
+        <div class="tags"><span>C++</span><span>Java</span><span>JavaScript</span><span>SQL</span></div>
+      </div>
+      <div>
+        <h3>Algo de experiencia</h3>
+        <div class="tags"><span>HTML</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="proyectos">
+  <div class="wrap">
+    <h2>Proyectos</h2>
+    <div class="proj">
+      <article class="p">
+        <h3>Sistema musical</h3>
+        <p>Sistema de gestión de un sistema musical.</p>
+        <div class="tags"><span>C++</span></div>
+        <p style="margin-top:.8rem"><a href="https://github.com/Hamilton-git05/Proyecto_sistema_musical">Ver código en GitHub</a></p>
+      </article>
+      <article class="p">
+        <h3>Juego de dados</h3>
+        <p>Mini juego de dados.</p>
+        <div class="tags"><span>C++</span></div>
+        <p style="margin-top:.8rem"><a href="https://github.com/Hamilton-git05/Juego_Dados">Ver código en GitHub</a></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="redes" class="redes">
+  <div class="wrap">
+    <h2>Redes</h2>
+    <ul>
+      <li><a href="https://github.com/Hamilton-git05">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/hamilton-y-818357208/">LinkedIn</a></li>
+      <li><a href="https://www.instagram.com/Hamiltonbrs1958">Instagram</a></li>
+    </ul>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="wrap">
+    <h2>Contacto</h2>
+    <form id="form-contacto" action="https://formspree.io/f/mgavgdnw" method="POST" novalidate>
+      <label>Nombre <input type="text" name="nombre" autocomplete="name"><span class="error" data-error="nombre"></span></label>
+      <label>Email <input type="email" name="email" autocomplete="email"><span class="error" data-error="email"></span></label>
+      <label>Mensaje <textarea name="mensaje" rows="5"></textarea><span class="error" data-error="mensaje"></span></label>
+      <button class="btn" type="submit">Enviar mensaje</button>
+      <p class="estado" id="estado" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>&copy; 2026 Hamilton Yaluzan</footer>
+<script src="script.js"></script>
+</body>
+</html>

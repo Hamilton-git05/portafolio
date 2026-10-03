@@ -1,0 +1,60 @@
+:root{--paper:#F3F6F9;--panel:#FFFFFF;--ink:#16202E;--muted:#4C5B70;--blue:#1F4FD8;--sun:#FF6B1A;--line:#D5DDE8}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:"Source Sans 3",system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;font-size:18px}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.1}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+header{position:sticky;top:0;z-index:10;background:var(--ink);padding:.8rem 1.25rem;display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;align-items:center;justify-content:space-between}
+.logo{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;color:#fff;text-decoration:none;font-size:1.2rem}
+nav ul{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.25rem 1.25rem}
+nav a{color:#E4EAF3;text-decoration:none;font-size:1rem;padding:.2rem 0;border-bottom:2px solid transparent}
+nav a:hover{border-color:var(--sun)}
+section{padding:4.5rem 1.25rem}
+.wrap{max-width:1000px;margin:0 auto}
+h2{font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:1.5rem}
+#inicio{background:var(--paper);text-align:center;padding:3.5rem 1.25rem 4.5rem}
+.hero{display:flex;flex-direction:column;align-items:center;gap:1.25rem}
+.hero h1{font-size:clamp(2.8rem,9vw,5.5rem);font-weight:800;letter-spacing:-.02em;color:var(--blue)}
+.hero p{color:var(--muted);max-width:52ch;font-size:1.2rem}
+.btn{display:inline-block;background:var(--sun);color:var(--ink);font-weight:600;padding:.8rem 1.5rem;border-radius:6px;text-decoration:none;border:0;font:inherit;font-weight:600;cursor:pointer}
+.btn:hover{background:#FF8A4A}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--ink);margin-left:.5rem}
+.btn.alt:hover{background:var(--ink);color:#fff}
+.foto{width:100%;max-width:200px;aspect-ratio:1;border-radius:50%;border:6px solid var(--sun);object-fit:cover;justify-self:center;background:#243349}
+.info{display:grid;grid-template-columns:1.5fr 1fr;gap:2.5rem}
+.info p+p{margin-top:1rem}
+dl{background:var(--panel);border-left:6px solid var(--blue);padding:1.25rem 1.5rem}
+dt{font-weight:600;color:var(--muted);font-size:.95rem}
+dd{margin-bottom:.8rem}dd:last-child{margin-bottom:0}
+#conocimientos{background:var(--panel)}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2rem}
+.skills h3{font-size:1.25rem;margin-bottom:.8rem}
+.skills li{list-style:none;margin-bottom:.7rem}
+.skills ul{padding:0}
+.bar{height:8px;background:var(--line);border-radius:4px;margin-top:.2rem}
+.bar i{display:block;height:100%;background:var(--blue);border-radius:4px}
+.proj{display:grid;gap:1.5rem}
+.p{background:var(--panel);border:1px solid var(--line);border-top:6px solid var(--blue);padding:1.5rem}
+.p:nth-child(2){border-top-color:var(--sun)}
+.p h3{font-size:1.4rem;margin-bottom:.4rem}
+.tags{margin-top:.8rem;display:flex;flex-wrap:wrap;gap:.4rem}
+.tags span{background:#E6ECF7;color:var(--ink);font-size:.9rem;padding:.1rem .7rem;border-radius:99px}
+.redes ul{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:1rem}
+.redes a{display:block;padding:.7rem 1.4rem;background:var(--ink);color:#fff;text-decoration:none;border-radius:6px;font-weight:600}
+.redes a:hover{background:var(--blue)}
+#contacto{background:var(--panel)}
+form{max-width:560px;display:grid;gap:1rem}
+label{font-weight:600;display:grid;gap:.3rem}
+input,textarea{font:inherit;padding:.7rem .8rem;border:2px solid var(--line);border-radius:6px;background:var(--paper);color:var(--ink)}
+input:focus,textarea:focus{border-color:var(--blue);outline:none}
+form .btn{background:var(--blue);color:#fff;justify-self:start}
+form .btn:hover{background:#173cae}
+footer{background:var(--ink);color:#C9D4E4;text-align:center;padding:1.5rem;font-size:.95rem}
+@media(max-width:760px){.hero,.info{grid-template-columns:1fr}.foto{max-width:240px;order:-1}section{padding:3rem 1.25rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.error{color:#B3261E;font-size:.95rem;font-weight:400;min-height:1.2em}
+input.invalid,textarea.invalid{border-color:#B3261E}
+.estado{font-weight:600}
+.estado.ok{color:#1B7F3B}
+.estado.mal{color:#B3261E}
